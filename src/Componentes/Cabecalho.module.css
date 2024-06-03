@@ -1,0 +1,46 @@
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--azul-real); /* Cor de fundo inspirada no MV "UNFORGIVEN" */
+    color: #fff; /* Cor do texto */
+}
+
+.tituloContainer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.perfilContainer {
+    display: flex;
+    align-items: center;
+}
+
+.opcoesTema {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.texto {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* Estilos para tornar o cabeçalho responsivo */
+@media (max-width: 768px) {
+    .conteiner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfilContainer {
+        margin-top: 1rem;
+    }
+}

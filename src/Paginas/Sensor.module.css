@@ -1,0 +1,48 @@
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+}
+
+.container {
+    margin: 20px;
+}
+
+.loading, .error {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.loading {
+    color: var(--azul-real);
+}
+
+.error {
+    color: var(--rosa-chocante);
+}
+
+.titulo {
+    color: var(--azul-real);
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid var(--cinza-metalico);
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--rosa-chocante);
+    color: var(--cinza-claro);
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--cinza-metalico);
+}

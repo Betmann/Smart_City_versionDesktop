@@ -1,0 +1,34 @@
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--fundo-gradiente);
+    color: #fff;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.loading, .error {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.loading {
+    color: var(--azul-real);
+}
+
+.error {
+    color: var(--rosa-chocante);
+}

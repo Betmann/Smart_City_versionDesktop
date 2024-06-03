@@ -1,0 +1,32 @@
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+}
+
+.gridConteiner {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'lateral conteudo';
+    background: var(--fundo-gradiente);
+}
+
+header {
+    grid-area: cabecalho; 
+}
+
+aside {
+    grid-area: lateral;
+    background-color: var(--cinza-metalico);
+}
+
+main {
+    grid-area: conteudo;
+    background-color: var(--rosa-chocante);
+}

@@ -1,0 +1,95 @@
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--fundo-gradiente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+  }
+  
+  .conteiner {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--rosa-chocante);
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .campo {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: 2px solid var(--cinza-metalico);
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .campo:focus {
+    border-color: var(--rosa-chocante);
+  }
+  
+  .mensagem {
+    margin: 0.5rem 0;
+    color: var(--rosa-chocante);
+    font-size: 0.875rem;
+  }
+  
+  .botao {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: var(--rosa-chocante);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .botao:hover {
+    background: var(--azul-real);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

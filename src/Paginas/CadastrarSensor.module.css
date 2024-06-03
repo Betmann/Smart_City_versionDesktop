@@ -1,0 +1,75 @@
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+}
+
+.conteiner {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: var(--roxo-claro); /* Ajuste para a cor correta */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+    width: 90%;
+    max-width: 400px; /* Limita a largura do formulário */
+}
+
+.campo {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%; /* Preenche toda a largura do formulário */
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho total do campo */
+}
+
+.coordenadas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.campoCoordenada {
+    flex: 1; /* Distribui o espaço igualmente entre os campos de coordenadas */
+}
+
+.campoCheckbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.campoCheckbox input {
+    margin-right: 10px;
+}
+
+.botao {
+    background-color: var(--roxo-escuro);
+    color: var(--cinza-claro);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer; /* Adiciona o cursor de ponteiro ao passar sobre o botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+.botao:hover {
+    background-color: var(--rosa-chocante); /* Ajuste para a cor correta */
+}

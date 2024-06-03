@@ -1,0 +1,75 @@
+/* Define as variáveis de cor */
+:root {
+    --azul-real: #0033A0;
+    --rosa-chocante: #FF1493;
+    --cinza-metalico: #8A8A8A;
+    --fundo-gradiente: linear-gradient(135deg, var(--azul-real), var(--rosa-chocante));
+}
+
+/* Estilos para o container */
+.conteiner {
+    background-color: var(--cinza-metalico);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+/* Estilos para a imagem do cabeçalho */
+.imagemCabecalho {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilos para o perfil */
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.perfil p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--azul-real); /* Texto em azul-real */
+}
+
+/* Estilos para o avatar */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--rosa-chocante); /* Borda em rosa-chocante */
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Estilos para a seção de botões */
+.conteiner section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Estilos para os botões */
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--rosa-chocante); /* Fundo dos botões em rosa-chocante */
+    color: #fff; /* Texto branco nos botões */
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Estilos para o hover nos botões */
+.botao:hover {
+    background-color: var(--azul-real); /* Hover em azul-real */
+}
